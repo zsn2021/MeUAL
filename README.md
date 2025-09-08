@@ -8,7 +8,9 @@
 
 ## 1. 演示视频
 以下是不同交通密度场景的仿真演示视频：  
-[YouTube 演示视频](https://youtu.be/zhTdhN__20Q?si=w5-8bgVpGFjBPeTK)
+
+[![演示视频缩略图](https://img.youtube.com/vi/zhTdhN__20Q/maxresdefault.jpg)](https://youtu.be/zhTdhN__20Q?si=w5-8bgVpGFjBPeTK)  
+*点击图片观看完整视频*
 
 
 ## 2. 参数配置表
