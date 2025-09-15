@@ -1,4 +1,4 @@
-# MeUAL-Towards-Safe-and-Efficient-Decision-Making-and-Control-for-Autonomous-Highway-Overtaking
+# MeUAL: Model-enhanced Uncertainty-aware Augmented Lagrangian for Safe Decision-Making and Control in Autonomous Highway Overtaking
 
 ## 目录
 1. [演示视频](#1-演示视频)
