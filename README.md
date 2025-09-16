@@ -11,7 +11,6 @@
 <img width="5294" height="3275" alt="fig2" src="https://github.com/user-attachments/assets/0669b393-ef4b-47f1-99f5-e1fce5212e30" />
 
 
-
 ## 1. Driving Scenario Setup
 
 ### Environment Configuration
