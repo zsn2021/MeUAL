@@ -27,6 +27,9 @@
 以下为不同交通密度场景的仿真结果对比：
 
 ### 3.1 常规交通密度场景
+file:///D:/Users/zhangsunan/Desktop/1-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%AE%BA%E6%96%87%E5%90%AF%E5%8A%A8/1-%E5%A4%A7%E4%BF%AE/%E8%A7%86%E9%A2%91/IDM+MOBIL.mp4
+
+
 ![常规交通密度结果图](./results/regular_traffic_result.png)
 *图1：常规交通密度下的车辆行驶状态（平均车速：85 km/h，无拥堵）*
 
