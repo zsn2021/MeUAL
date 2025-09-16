@@ -55,11 +55,11 @@ The highway simulation scenario reconstructed in CARLA.
 
 #### 3.1 IDM + MOBIL
 
-https://github.com/user-attachments/assets/0856957f-f72f-4060-b606-232452ffdbda
+![Multiple Perspectives of Highway Simulation Scenarios in CARLA (IDM + MOBIL)](https://github.com/user-attachments/assets/0856957f-f72f-4060-b606-232452ffdbda)
 
 Multiple Perspectives of Highway Simulation Scenarios in CARLA.
 
-![IDM+MOBIL](https://github.com/user-attachments/assets/62295dfb-c782-4c4e-8e9b-4970a806963c)
+![Dynamic Driving Risk Field (IDM + MOBIL)](https://github.com/user-attachments/assets/62295dfb-c782-4c4e-8e9b-4970a806963c)
 
 Dynamic Driving Risk Field.
 
@@ -67,11 +67,11 @@ Dynamic Driving Risk Field.
 
 #### 3.2 MeUAL
 
-https://github.com/user-attachments/assets/6a521b76-0349-4524-a428-b7c947bd90ad
+![Multiple Perspectives of Highway Simulation Scenarios in CARLA (MeUAL)](https://github.com/user-attachments/assets/6a521b76-0349-4524-a428-b7c947bd90ad)
 
-<center> Multiple Perspectives of Highway Simulation Scenarios in CARLA.
+Multiple Perspectives of Highway Simulation Scenarios in CARLA.
 
-![MeUAL](https://github.com/user-attachments/assets/615da2bc-5fc9-4e1c-8ced-f5fa4609436b)
+![Dynamic Driving Risk Field (MeUAL)](https://github.com/user-attachments/assets/615da2bc-5fc9-4e1c-8ced-f5fa4609436b)
 
 Dynamic Driving Risk Field.
 
@@ -80,10 +80,10 @@ Dynamic Driving Risk Field.
 #### 3.3 MeUAL-PSM
 
 
-https://github.com/user-attachments/assets/2186ceff-4bef-41ec-a89f-00bc62c55ef3
+![Multiple Perspectives of Highway Simulation Scenarios in CARLA (MeUAL-PSM)](https://github.com/user-attachments/assets/2186ceff-4bef-41ec-a89f-00bc62c55ef3)
 
 Multiple Perspectives of Highway Simulation Scenarios in CARLA.
 
-![MeUAL-PSM](https://github.com/user-attachments/assets/59bb246e-c50e-41f0-8c7c-d8c46366f4d7)
+![Dynamic Driving Risk Field (MeUAL-PSM)](https://github.com/user-attachments/assets/59bb246e-c50e-41f0-8c7c-d8c46366f4d7)
 
 Dynamic Driving Risk Field.
