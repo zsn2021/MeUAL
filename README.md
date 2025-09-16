@@ -1,49 +1,58 @@
 # MeUAL: Model-enhanced Uncertainty-aware Augmented Lagrangian for Safe Decision-Making and Control in Autonomous Highway Overtaking
 
 ## 目录
-1. [演示视频](#1-演示视频)
-2. [参数配置表](#2-参数配置表)
-3. [实验结果](#3-实验结果)
+
+- [1. Driving Scenario Setup](#1-driving-scenario-setup)
+- [3. Experimental Results and Discussion](#3-experimental-results-and-discussion)
+  - [3.1 Analysis of the Overtaking Behavior of MeUAL-PSM](#31-analysis-of-the-overtaking-behavior-of-meual-psm)
+
+
+## 1. Decision-Making and Control Framework Based on MeUAL
+<img width="5294" height="3275" alt="fig2" src="https://github.com/user-attachments/assets/0669b393-ef4b-47f1-99f5-e1fce5212e30" />
+
 
 
 ## 1. Driving Scenario Setup
-以下是不同交通密度场景的仿真演示视频：  
+
+### Environment Configuration
+
+| **Component**              | **Description**                                                                                                                                      |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Simulator**               | Highway-env simulator for traffic scenario construction                                                                                             |
+| **Ego Vehicle Initial Speed ($v_0$)** | 25 m/s                                                                                                                                           |
+| **Surrounding Vehicles Initial Speed ($v_i$)** | Randomly generated between [21, 24] m/s                                                                                                       |
+| **Surrounding Vehicles Control Models** | IDM for longitudinal control and MOBIL for lateral lane-changing                                                                                |
+| **Vehicle Length**          | 5 m                                                                                                                                                 |
+| **Vehicle Width**           | 2 m                                                                                                                                                 |
+| **Lane Configuration**      | Four-lane highway with lane width of 4 m                                                                                                            |
+| **Vehicle Politeness Coefficient (MOBIL)** | Set to 0 to disregard surrounding vehicles when changing lanes                                                                                  |
+| **Acceleration Coefficient (IDM)** | Randomly selected between [3.5, 4.5] m/s²                                                                                                       |
+| **Lane Selection**          | Randomly selected from four available lanes (L1, L2, L3, L4)                                                                                      |
+| **Position Noise**          | Longitudinal position offset $\Delta x_i$ is adjusted with a random number uniformly distributed between 0.9 and 1.1 to simulate noise             |
+| **Number of Surrounding Vehicles** | 20                                                                                                                                               |
+| **Simulation Platform**     | Reconstructed in CARLA for more realistic environment                                                                                              |
+| **State Information**       | The ego vehicle and surrounding vehicles' state information (position, velocity, heading) are accurately obtained within the perception range      |
+| **Gaussian Noise**          | Added to the state information to simulate perception-level noise                                                                                  |
+
+### Visual Representation
+
+- **Highway Scenario**:
+<img width="2275" height="881" alt="fig4" src="https://github.com/user-attachments/assets/11ff84c9-9218-417b-98c6-4560aece3a49" />
+
+- **CARLA Simulation**: 
+
+<img width="2188" height="813" alt="CARLA_env" src="https://github.com/user-attachments/assets/fe68d27e-7bdc-498e-9275-70c9b817c60b" />
 
 
-https://github.com/user-attachments/assets/d0260c2e-3b4f-4834-bb87-4ec1b9139b6f
+## 3. Experimental Results and Discussion
+
+### 3.1 Analysis of the Overtaking Behavior of MeUAL-PSM
+
+https://github.com/user-attachments/assets/163f5421-8a28-46f8-985c-39d7e61e1497
+
+https://github.com/user-attachments/assets/0a8925ec-101f-4be1-864e-18d21e74755f
+
+https://github.com/user-attachments/assets/fa3a1a43-4275-4e54-a79f-69e7c439ee53
 
 
-https://github.com/user-attachments/assets/5ab22040-5c91-4fae-a876-83f1cc5dd25a
 
-
-https://github.com/user-attachments/assets/4601dc64-491e-4edb-bfe0-1b8a846912e7
-
-
-
-## 2. 参数配置表
-| 参数类别         | 具体参数               | 常规交通密度值 | 密集交通密度值 |
-|------------------|------------------------|----------------|----------------|
-| 车辆数量         | 高速公路总车辆数       | 20-30 辆       | 50-70 辆       |
-| 车速范围         | 最低/最高车速（km/h）  | 60-100         | 40-80          |
-| 车道数量         | 单向车道数             | 3              | 3              |
-| 仿真时长         | 单次实验时长（分钟）   | 5              | 5              |
-| 天气条件         | 仿真环境天气           | 晴天           | 晴天           |
-
-
-## 3. 实验结果
-以下为不同交通密度场景的仿真结果对比：
-
-### 3.1 常规交通密度场景
-file:///D:/Users/zhangsunan/Desktop/1-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%AE%BA%E6%96%87%E5%90%AF%E5%8A%A8/1-%E5%A4%A7%E4%BF%AE/%E8%A7%86%E9%A2%91/IDM+MOBIL.mp4
-
-
-![常规交通密度结果图](./results/regular_traffic_result.png)
-*图1：常规交通密度下的车辆行驶状态（平均车速：85 km/h，无拥堵）*
-
-### 3.2 密集交通密度场景
-![密集交通密度结果图](./results/dense_traffic_result.png)
-*图2：密集交通密度下的车辆行驶状态（平均车速：55 km/h，局部拥堵）*
-
-### 3.3 关键指标对比
-![指标对比图](./results/metrics_comparison.png)
-*图3：两种场景下平均车速、拥堵频率对比*
