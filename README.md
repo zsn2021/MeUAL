@@ -1,4 +1,4 @@
-# MeUAL: A Model-enhanced Uncertainty-aware Safe Reinforcement Learning Approach for Safety-critical Autonomous Highway Overtaking
+# MeUAL: Model-enhanced Uncertainty-aware Safe Reinforcement Learning for Safety-critical Autonomous Highway Overtaking
 
 ## Table of Contents
 
