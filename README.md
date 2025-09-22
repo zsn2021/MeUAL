@@ -1,4 +1,4 @@
-# MeUAL: A Model-enhanced Uncertainty-aware Augmented Lagrangian Framework for Safe Autonomous Highway Overtaking
+# MeUAL: A Model-enhanced Uncertainty-aware Safe Reinforcement Learning Approach for Safety-critical Autonomous Highway Overtaking
 
 ## Table of Contents
 
