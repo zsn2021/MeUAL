@@ -36,7 +36,7 @@ Decision-making and control framework based on MeUAL.
 ### 2.2 Parameters of IDM and MOBIL Models
 <img width="787" height="374" alt="image" src="https://github.com/user-attachments/assets/c7ec657b-3749-458b-b9ff-13de62c6a78d" />
 
-The parameter ranges of IDM and MOBIL are selected based on commonly used values reported in prior studies [[1]](#1), [[2]](#2) to reflect realistic highway-driving behaviors.  
+The parameter ranges of IDM and MOBIL are selected based on commonly used values reported in prior studies [[1]](#1), [[2]](#2) to reflect realistic highway-driving behaviors. The detailed modeling of surrounding vehicles’ driving behaviors (i.e., the combination of IDM and MOBIL) can also be found in Section II-C of our previous work [[3]](#3).
 
 ### 2.3 Schematic Diagram of Highway Simulation Scenario
 
@@ -90,5 +90,8 @@ Multiple Perspectives of Highway Simulation Scenarios in CARLA.
 Dynamic Driving Risk Field.
 
 ### References  
-<a id="1">[1]</a> Treiber M., Hennecke A., Helbing D. *Congested traffic states in empirical observations and microscopic simulations.* Transportation Research Part B, 2000.  
-<a id="2">[2]</a> Kesting A., Treiber M., Helbing D. *General lane-changing model (MOBIL) for car-following models.* Transportation Research Record, 2007.
+<a id="1">[1]</a> M. Treiber, A. Hennecke, and D, Helbing, "Congested traffic states in empirical observationsand microscopic simulations," Physical review E, vol. 62,no.2, p.1805, 2000.  
+
+<a id="2">[2]</a> A.Kesting,M. Treiber, and D. Helbing,“General lane-changing model mobil for car-following models," Transportation Research Record, vol. 1999, no.1,pp.86-94, 2007.
+
+<a id="3">[3]</a> S. Zhang, W, Zhuang, B. Li, K, Li, T. Xia, and B. Hu, “Integration of planning and deepreinforcement learning in speed and lane change decision-making for highway autonomousdriving," IEEE Transactions on Transportation Electrifcation,2024.
