@@ -22,14 +22,10 @@ Decision-making and control framework based on MeUAL.
 | **Component**                   | **Description**                                                                                                                                  |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Simulator**                   | Highway-env simulator for traffic scenario construction                                                                                         |
-| **Ego Vehicle Initial Speed ($v_0$)** | 25 m/s                                                                                                                                       |
-| **Surrounding Vehicles Initial Speed ($v_i$)** | Randomly generated between [21, 24] m/s                                                                                                   |
 | **Surrounding Vehicles Control Models** | IDM for longitudinal control and MOBIL for lateral lane-changing                                                                            |
 | **Vehicle Length**              | 5 m                                                                                                                                             |
 | **Vehicle Width**               | 2 m                                                                                                                                             |
 | **Lane Configuration**          | Four-lane highway with lane width of 4 m                                                                                                        |
-| **Politeness Coefficient (MOBIL)** | Set to 0, meaning surrounding vehicles are not considered when changing lanes                                                                 |
-| **Acceleration Coefficient (IDM)** | Randomly selected between [3.5, 4.5] m/s²                                                                                                     |
 | **Lane Selection**              | Randomly selected from four available lanes (L1, L2, L3, L4)                                                                                    |
 | **Position Noise**              | Longitudinal offset $\Delta x_i$ adjusted by a uniform random number between 0.9 and 1.1 to simulate noise                                       |
 | **Number of Surrounding Vehicles** | 20                                                                                                                                             |
@@ -37,12 +33,17 @@ Decision-making and control framework based on MeUAL.
 | **State Information**           | Ego vehicle and surrounding vehicles’ states (position, velocity, heading) assumed to be accurately obtained within the perception range         |
 | **Gaussian Noise**              | Added to state information to simulate perception-level noise                                                                                   |
 
-### 2.2 Schematic Diagram of Highway Simulation Scenario
+### 2.2 Parameters of IDM and MOBIL Models
+<img width="787" height="374" alt="image" src="https://github.com/user-attachments/assets/c7ec657b-3749-458b-b9ff-13de62c6a78d" />
+
+The parameter ranges of IDM and MOBIL are selected based on commonly used values reported in prior studies [[1]](#1), [[2]](#2) to reflect realistic highway-driving behaviors.  
+
+### 2.3 Schematic Diagram of Highway Simulation Scenario
 
 - **Highway-env**  
 <img width="900" alt="fig4" src="https://github.com/user-attachments/assets/11ff84c9-9218-417b-98c6-4560aece3a49" />
 
-Schematic diagram of a four-lane highway. The red car represents the ego vehicle, while the white cars represent the surrounding vehicles.  
+Schematic diagram of a four-lane highway. The red car represents the ego vehicle, while the white cars represent the surrounding vehicles.    
 
 - **CARLA**  
 <img width="900" alt="CARLA_env" src="https://github.com/user-attachments/assets/fe68d27e-7bdc-498e-9275-70c9b817c60b" />
@@ -87,3 +88,7 @@ Multiple Perspectives of Highway Simulation Scenarios in CARLA.
 ![Dynamic Driving Risk Field (MeUAL-PSM)](https://github.com/user-attachments/assets/59bb246e-c50e-41f0-8c7c-d8c46366f4d7)
 
 Dynamic Driving Risk Field.
+
+### References  
+<a id="1">[1]</a> Treiber M., Hennecke A., Helbing D. *Congested traffic states in empirical observations and microscopic simulations.* Transportation Research Part B, 2000.  
+<a id="2">[2]</a> Kesting A., Treiber M., Helbing D. *General lane-changing model (MOBIL) for car-following models.* Transportation Research Record, 2007.
